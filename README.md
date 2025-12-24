@@ -40,12 +40,14 @@ All models use identical hyperparameters:
 
 ## Results (Patient P5)
 
-| Model | Decoder | Loss | SSIM_2um | PCC_2um | PCC_8um | Best Epoch | Pred/Tgt |
-|-------|---------|------|----------|---------|---------|------------|----------|
+| Model | Decoder | Loss | SSIM_2um | PCC_2um | PCC_8um (global) | Best Epoch | Pred/Tgt |
+|-------|---------|------|----------|---------|------------------|------------|----------|
 | **D'** | Hist2ST | MSE | 0.227 | 0.309 | 0.457 | 40 | 2.0x |
 | **E'** | Hist2ST | Poisson | **0.576** | 0.313 | 0.466 | 22 | 1.0x |
 | **F** | Img2ST | Poisson | 0.388 | 0.298 | 0.441 | 35 | 1.0x |
 | **G** | Img2ST | MSE | 0.154 | 0.260 | 0.382 | 36 | 4.4x |
+
+*Note: PCC_8um is computed as global correlation (all predictions flattened). Metrics evaluated on held-out Patient P5.*
 
 ---
 
