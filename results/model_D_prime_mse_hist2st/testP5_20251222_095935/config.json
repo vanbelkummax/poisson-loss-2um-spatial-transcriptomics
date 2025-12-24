@@ -1,0 +1,18 @@
+{
+  "test_patient": "P5",
+  "data_dir": "/mnt/x/img2st_rotation_demo/processed_crc_raw_counts",
+  "save_dir": "results/model_D_prime_mse_hist2st",
+  "encoder": "virchow2",
+  "decoder": "hist2st",
+  "num_genes": 50,
+  "input_size": 224,
+  "epochs": 40,
+  "batch_size": 8,
+  "grad_accum": 4,
+  "lr": 5e-05,
+  "warmup_epochs": 2,
+  "patience": 10,
+  "seed": 42,
+  "git_commit": "e0b40160f12c92ae42c493a511d6d6a42c157ac7",
+  "model_type": "model_d_prime_hist2st_mse"
+}

@@ -1,0 +1,18 @@
+{
+  "test_patient": "P5",
+  "data_dir": "/mnt/x/img2st_rotation_demo/processed_crc_raw_counts",
+  "save_dir": "results/model_E_prime_poisson_hist2st",
+  "encoder": "virchow2",
+  "decoder": "hist2st",
+  "num_genes": 50,
+  "input_size": 224,
+  "epochs": 40,
+  "batch_size": 8,
+  "grad_accum": 4,
+  "lr": 5e-05,
+  "warmup_epochs": 2,
+  "patience": 10,
+  "seed": 42,
+  "git_commit": "81d6e2e08081f79980ce0e0402b5bb39ed2583e3",
+  "model_type": "baseline_2um_poisson"
+}

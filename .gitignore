@@ -1,0 +1,13 @@
+# Exclude model weights
+*.pt
+*.pth
+*.ckpt
+__pycache__/
+*.pyc
+
+# Exclude large numpy arrays (predictions/labels)
+*.npy
+
+# Keep config/metrics JSONs but exclude training logs
+training_log.jsonl
+
